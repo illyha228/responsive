@@ -1,0 +1,196 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #0f1923;
+    color: #fff;
+}
+
+.menu {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: rgb(18, 18, 18);
+}
+
+.menu ul li {
+    margin: 25px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    animation: blinki 2s infinite;
+}
+
+.menu ul li a:hover {
+    color: orange;
+}
+
+.menu ul li:not(:first-child) {
+    margin-left: 25px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b2733;
+    color: #ff4655;
+    border-bottom: 1px solid #444;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1b2733;
+    color: #ff4655;
+    border-top: 1px solid #444;
+}
+
+.profile-card, .game-history, .player-stats {
+    background-color: #1b2733;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card {
+    grid-column: span 1;
+}
+
+.game-history {
+    grid-column: span 1;
+}
+
+.player-stats {
+    grid-column: span 1;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ff4655;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    background-color: #1b2733;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.info li {
+    margin-bottom: 13px;
+}
+.info p {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.player-name {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: #ff4655;
+}
+
+.rating {
+    font-size: 18px;
+    color: #ffcc00;
+    margin: 0 0 20px 0;
+}
+
+button, a {
+    background-color: #ff4655;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+button:hover, a:hover {
+    background-color: #e03e4e;
+}
+
+.game-history h3, .player-stats h3, .player-stats h4 {
+    margin: 0 0 10px 0;
+    color: #ff4655;
+}
+
+.game-history ul, .player-stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.game-history li, .player-stats li {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.game-history, .player-stats {
+    background-color: #1b2733;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 170px;
+}
+
+.new-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.new-image img {
+    position: absolute;
+    top: -325px;
+    left: 700px;
+    width: 500px;
+    height: 280px;
+    border-radius: 10px;
+}
